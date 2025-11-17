@@ -6,13 +6,13 @@ namespace Tyuiu.VariiMN.Sprint4.Task2.V22.Lib
     {
         public int Calculate(int[] array)
         {
-            int sumArray = 0;
+            int sumArray = 1;
 
             for (int i = 0; i <= array.Length - 1; i++)
             {
                 if (array[i] % 2 != 0)
                 {
-                    sumArray += array[i];
+                    sumArray *= array[i];
                 }
             }
             return sumArray;
